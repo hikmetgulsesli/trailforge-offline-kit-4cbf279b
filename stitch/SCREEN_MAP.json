@@ -1,0 +1,38 @@
+[
+  {
+    "screenId": "671611e8dc8042169ebc2366491fdfc5",
+    "name": "Empty and Error Recovery - TrailForge Offline Kit",
+    "type": "error",
+    "description": "Empty and Error Recovery - TrailForge Offline Kit screen",
+    "surfaceIds": [
+      "SURF_EMPTY_AND_ERROR_RECOVERY"
+    ]
+  },
+  {
+    "screenId": "0559af937c4d48b583069b62a8f4a202",
+    "name": "Kit Operations - TrailForge Offline Kit",
+    "type": "app-screen",
+    "description": "Kit Operations - TrailForge Offline Kit screen",
+    "surfaceIds": [
+      "SURF_KIT_OPERATIONS"
+    ]
+  },
+  {
+    "screenId": "aa3b6781ac914225b697177adb05e6ba",
+    "name": "Kit Editor - TrailForge Offline Kit",
+    "type": "form",
+    "description": "Kit Editor - TrailForge Offline Kit screen",
+    "surfaceIds": [
+      "SURF_KIT_EDITOR"
+    ]
+  },
+  {
+    "screenId": "97b18301f5e34d21aa035b093f2c90d7",
+    "name": "Gear Pack Assignment - TrailForge Offline Kit",
+    "type": "app-screen",
+    "description": "Gear Pack Assignment - TrailForge Offline Kit screen",
+    "surfaceIds": [
+      "SURF_GEAR_PACK_ASSIGNMENT"
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "screenId": "671611e8dc8042169ebc2366491fdfc5",
+    "title": "Empty and Error Recovery - TrailForge Offline Kit",
+    "htmlFile": "671611e8dc8042169ebc2366491fdfc5.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2E0YThmMzlhYWM0MDQ4NTg5MDgzNmQ4YjBjNWZhZTg4EgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhM3OTg1ODc5MTU2NDk5NDQ0NzMx&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/trailforge-offline-kit-4cbf279b/stitch/671611e8dc8042169ebc2366491fdfc5.html",
+    "surfaceIds": [
+      "SURF_EMPTY_AND_ERROR_RECOVERY"
+    ]
+  },
+  {
+    "screenId": "0559af937c4d48b583069b62a8f4a202",
+    "title": "Kit Operations - TrailForge Offline Kit",
+    "htmlFile": "0559af937c4d48b583069b62a8f4a202.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2M0MmNlYzFlOTUxNDRmMDM4OTBhYTc2YTBiYjEyZTdiEgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhM3OTg1ODc5MTU2NDk5NDQ0NzMx&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/trailforge-offline-kit-4cbf279b/stitch/0559af937c4d48b583069b62a8f4a202.html",
+    "surfaceIds": [
+      "SURF_KIT_OPERATIONS"
+    ]
+  },
+  {
+    "screenId": "aa3b6781ac914225b697177adb05e6ba",
+    "title": "Kit Editor - TrailForge Offline Kit",
+    "htmlFile": "aa3b6781ac914225b697177adb05e6ba.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzZjMThlOWVhMTkwMzRmNGFhM2MxNDRkZGZiZDIxNTRhEgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhM3OTg1ODc5MTU2NDk5NDQ0NzMx&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/trailforge-offline-kit-4cbf279b/stitch/aa3b6781ac914225b697177adb05e6ba.html",
+    "surfaceIds": [
+      "SURF_KIT_EDITOR"
+    ]
+  },
+  {
+    "screenId": "97b18301f5e34d21aa035b093f2c90d7",
+    "title": "Gear Pack Assignment - TrailForge Offline Kit",
+    "htmlFile": "97b18301f5e34d21aa035b093f2c90d7.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzUyMWFhYjJmNGZlOTQxODk4NGI2NmU5OWNmODlmNTc0EgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhM3OTg1ODc5MTU2NDk5NDQ0NzMx&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/trailforge-offline-kit-4cbf279b/stitch/97b18301f5e34d21aa035b093f2c90d7.html",
+    "surfaceIds": [
+      "SURF_GEAR_PACK_ASSIGNMENT"
+    ]
+  }
+]

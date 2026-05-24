@@ -1,0 +1,2401 @@
+{
+  "generatedAt": "2026-05-24T22:14:21.780Z",
+  "screenCount": 4,
+  "screens": {
+    "0559af937c4d48b583069b62a8f4a202": {
+      "screenId": "0559af937c4d48b583069b62a8f4a202",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "fixed",
+            "left-0",
+            "top-0",
+            "h-full",
+            "w-64",
+            "bg-surface-container",
+            "flex",
+            "flex-col",
+            "py-stack-md",
+            "border-r-2"
+          ],
+          "childCount": 6
+        },
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "flex",
+            "justify-between",
+            "items-center",
+            "w-full",
+            "px-margin-desktop",
+            "h-16",
+            "z-50",
+            "bg-surface",
+            "border-b-2",
+            "border-outline-variant"
+          ],
+          "childCount": 5
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-grow",
+            "p-margin-desktop",
+            "flex",
+            "gap-gutter",
+            "overflow-hidden",
+            "h-[calc(100vh-64px)]"
+          ],
+          "childCount": 34
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Operations",
+          "classes": [
+            "w-full",
+            "flex",
+            "items-center",
+            "gap-stack-sm",
+            "px-stack-sm",
+            "py-stack-sm",
+            "text-left",
+            "bg-primary",
+            "text-on-primary",
+            "font-bold",
+            "border-l-4",
+            "border-secondary-container",
+            "rounded-r-DEFAULT",
+            "transition-all"
+          ],
+          "icon": "settings_remote",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Assignment",
+          "classes": [
+            "w-full",
+            "flex",
+            "items-center",
+            "gap-stack-sm",
+            "px-stack-sm",
+            "py-stack-sm",
+            "text-left",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-highest",
+            "transition-all",
+            "border-l-4",
+            "border-transparent",
+            "rounded-r-DEFAULT"
+          ],
+          "icon": "assignment_ind",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Recovery",
+          "classes": [
+            "w-full",
+            "flex",
+            "items-center",
+            "gap-stack-sm",
+            "px-stack-sm",
+            "py-stack-sm",
+            "text-left",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-highest",
+            "transition-all",
+            "border-l-4",
+            "border-transparent",
+            "rounded-r-DEFAULT"
+          ],
+          "icon": "settings_backup_restore",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "New Log",
+          "classes": [
+            "w-full",
+            "flex",
+            "justify-center",
+            "items-center",
+            "py-stack-sm",
+            "bg-primary",
+            "text-on-primary",
+            "font-label-caps",
+            "text-label-caps",
+            "rounded",
+            "uppercase",
+            "hover:bg-primary-container",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Sync Settings",
+          "classes": [
+            "w-full",
+            "flex",
+            "items-center",
+            "gap-stack-sm",
+            "px-stack-sm",
+            "py-unit",
+            "text-left",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-highest",
+            "transition-all",
+            "rounded"
+          ],
+          "icon": "sync_alt",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "System Status",
+          "classes": [
+            "w-full",
+            "flex",
+            "items-center",
+            "gap-stack-sm",
+            "px-stack-sm",
+            "py-unit",
+            "text-left",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-highest",
+            "transition-all",
+            "rounded"
+          ],
+          "icon": "dns",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Sync",
+          "classes": [
+            "p-unit",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-highest",
+            "transition-colors",
+            "rounded"
+          ],
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Offline Mode",
+          "classes": [
+            "p-unit",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-highest",
+            "transition-colors",
+            "rounded"
+          ],
+          "icon": "cloud_off",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Settings",
+          "classes": [
+            "p-unit",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-highest",
+            "transition-colors",
+            "rounded"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/settings",
+          "expectedRoute": "/settings",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Create Kit",
+          "classes": [
+            "bg-primary",
+            "text-on-primary",
+            "px-stack-md",
+            "py-stack-sm",
+            "font-label-caps",
+            "text-label-caps",
+            "rounded",
+            "uppercase",
+            "hover:bg-primary-container",
+            "transition-colors",
+            "shadow-none",
+            "border",
+            "border-transparent",
+            "active:scale-[0.98]"
+          ],
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "classes": [
+            "flex",
+            "items-center",
+            "gap-unit",
+            "px-stack-sm",
+            "py-unit",
+            "border-2",
+            "border-outline-variant",
+            "text-on-surface",
+            "font-label-caps",
+            "text-label-caps",
+            "rounded",
+            "hover:bg-surface-container",
+            "transition-colors"
+          ],
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "Retry",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "text-on-error-container",
+            "underline",
+            "hover:opacity-80"
+          ],
+          "icon": null,
+          "action": "retry",
+          "expectedBehavior": "retry the failed action and show loading/error feedback"
+        },
+        {
+          "kind": "button",
+          "label": "Edit",
+          "classes": [
+            "p-unit",
+            "border",
+            "border-outline-variant",
+            "text-on-surface-variant",
+            "hover:bg-surface-container",
+            "transition-colors",
+            "rounded"
+          ],
+          "icon": "edit",
+          "action": "edit",
+          "expectedBehavior": "open edit flow or update selected item/state"
+        },
+        {
+          "kind": "button",
+          "label": "terrain",
+          "classes": [],
+          "icon": "terrain",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Field Operations Unit 04 - Active",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search Records...",
+          "placeholder": "Search Records...",
+          "name": "",
+          "classes": [
+            "bg-transparent",
+            "border-none",
+            "text-body-md",
+            "focus:ring-0",
+            "p-0",
+            "text-on-surface",
+            "w-48",
+            "placeholder-on-surface-variant"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [],
+      "cards": [],
+      "icons": [
+        "terrain",
+        "settings_remote",
+        "assignment_ind",
+        "settings_backup_restore",
+        "sync_alt",
+        "dns",
+        "search",
+        "sync",
+        "cloud_off",
+        "settings",
+        "person",
+        "filter_list",
+        "chevron_right",
+        "edit",
+        "check",
+        "update",
+        "cloud_download"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "surface-container-lowest": "#ffffff",
+        "surface-container": "#edeeef",
+        "on-secondary-container": "#643600",
+        "on-surface-variant": "#434843",
+        "inverse-primary": "#b4cdb8",
+        "on-tertiary-fixed": "#181a2e",
+        "surface-container-low": "#f3f4f5",
+        "primary-container": "#1b3022",
+        "tertiary-fixed": "#e0e0fc",
+        "on-background": "#191c1d",
+        "secondary-fixed": "#ffdcc1",
+        "surface": "#f8f9fa",
+        "surface-container-highest": "#e1e3e4",
+        "tertiary-container": "#282a3f",
+        "surface-dim": "#d9dadb",
+        "on-tertiary-container": "#9091aa",
+        "on-secondary": "#ffffff",
+        "secondary": "#8e4f00",
+        "on-error-container": "#93000a",
+        "on-tertiary-fixed-variant": "#43455b",
+        "primary-fixed": "#d0e9d4",
+        "on-primary-fixed-variant": "#364c3c",
+        "on-primary-container": "#819986",
+        "on-primary-fixed": "#0b2013",
+        "on-error": "#ffffff",
+        "primary": "#061b0e",
+        "surface-bright": "#f8f9fa",
+        "error-container": "#ffdad6",
+        "on-secondary-fixed-variant": "#6c3a00",
+        "on-tertiary": "#ffffff",
+        "on-surface": "#191c1d",
+        "tertiary": "#131629",
+        "tertiary-fixed-dim": "#c4c4df",
+        "surface-container-high": "#e7e8e9",
+        "inverse-on-surface": "#f0f1f2",
+        "outline": "#737973",
+        "on-primary": "#ffffff",
+        "error": "#ba1a1a",
+        "secondary-container": "#fe9415",
+        "on-secondary-fixed": "#2e1600",
+        "outline-variant": "#c3c8c1",
+        "surface-variant": "#e1e3e4",
+        "inverse-surface": "#2e3132",
+        "secondary-fixed-dim": "#ffb877",
+        "background": "#f8f9fa",
+        "surface-tint": "#4d6453",
+        "primary-fixed-dim": "#b4cdb8"
+      },
+      "fonts": [
+        "Hanken Grotesk",
+        "Inter",
+        "JetBrains Mono",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 4,
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "button",
+          "label": "Operations",
+          "icon": "settings_remote",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Assignment",
+          "icon": "assignment_ind",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Recovery",
+          "icon": "settings_backup_restore",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "New Log",
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Sync Settings",
+          "icon": "sync_alt",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "System Status",
+          "icon": "dns",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Sync",
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Offline Mode",
+          "icon": "cloud_off",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Settings",
+          "icon": "settings",
+          "action": "navigate",
+          "route": "/settings",
+          "expectedBehavior": "navigate:/settings"
+        },
+        {
+          "kind": "button",
+          "label": "Create Kit",
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "Retry",
+          "icon": null,
+          "action": "retry",
+          "expectedBehavior": "retry the failed action and show loading/error feedback"
+        },
+        {
+          "kind": "button",
+          "label": "Edit",
+          "icon": "edit",
+          "action": "edit",
+          "expectedBehavior": "open edit flow or update selected item/state"
+        },
+        {
+          "kind": "button",
+          "label": "terrain",
+          "icon": "terrain",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Field Operations Unit 04 - Active",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "Search Records...",
+          "type": "text",
+          "placeholder": "Search Records...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "terrain",
+          "icon": "terrain",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Field Operations Unit 04 - Active",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Operations",
+          "icon": "settings_remote",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Assignment",
+          "icon": "assignment_ind",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Recovery",
+          "icon": "settings_backup_restore",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "New Log",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Sync Settings",
+          "icon": "sync_alt",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "System Status",
+          "icon": "dns",
+          "active": false
+        }
+      ],
+      "title": "Kit Operations - TrailForge Offline Kit"
+    },
+    "671611e8dc8042169ebc2366491fdfc5": {
+      "screenId": "671611e8dc8042169ebc2366491fdfc5",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "hidden",
+            "md:flex",
+            "flex-col",
+            "h-full",
+            "fixed",
+            "left-0",
+            "top-0",
+            "w-64",
+            "bg-surface-container",
+            "py-stack-md"
+          ],
+          "childCount": 11
+        },
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "flex",
+            "justify-between",
+            "items-center",
+            "w-full",
+            "px-margin-desktop",
+            "h-16",
+            "z-50",
+            "bg-surface",
+            "border-b-2",
+            "border-outline-variant"
+          ],
+          "childCount": 6
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "p-margin-mobile",
+            "md:p-margin-desktop",
+            "flex",
+            "items-center",
+            "justify-center",
+            "bg-background"
+          ],
+          "childCount": 7
+        },
+        {
+          "tag": "nav",
+          "layout": "flex-row",
+          "classes": [
+            "md:hidden",
+            "fixed",
+            "bottom-0",
+            "left-0",
+            "w-full",
+            "bg-surface",
+            "border-t-2",
+            "border-outline-variant",
+            "z-50",
+            "flex"
+          ],
+          "childCount": 0
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "New Log",
+          "classes": [
+            "w-full",
+            "bg-primary",
+            "text-on-primary",
+            "font-label-caps",
+            "text-label-caps",
+            "py-stack-sm",
+            "px-stack-md",
+            "uppercase",
+            "transition-all",
+            "hover:bg-on-primary-fixed",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-stack-sm",
+            "border-2",
+            "border-primary"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "cloud_off",
+          "classes": [
+            "p-unit",
+            "hover:bg-surface-container-highest",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "justify-center"
+          ],
+          "icon": "cloud_off",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "sync",
+          "classes": [
+            "p-unit",
+            "hover:bg-surface-container-highest",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "justify-center"
+          ],
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "settings",
+          "classes": [
+            "p-unit",
+            "hover:bg-surface-container-highest",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "justify-center"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/settings",
+          "expectedRoute": "/settings",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Create Kit",
+          "classes": [
+            "bg-surface",
+            "text-primary",
+            "border-2",
+            "border-primary",
+            "font-label-caps",
+            "text-label-caps",
+            "py-unit",
+            "px-stack-md",
+            "uppercase",
+            "transition-all",
+            "hover:bg-surface-container-highest",
+            "hidden",
+            "sm:block"
+          ],
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Retry Load",
+          "classes": [
+            "w-full",
+            "sm:w-auto",
+            "bg-primary",
+            "text-on-primary",
+            "font-label-caps",
+            "text-label-caps",
+            "py-stack-sm",
+            "px-margin-desktop",
+            "uppercase",
+            "border-2",
+            "border-primary",
+            "hover:bg-on-primary-fixed",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "retry",
+          "expectedBehavior": "retry the failed action and show loading/error feedback"
+        },
+        {
+          "kind": "button",
+          "label": "Create First Kit",
+          "classes": [
+            "w-full",
+            "sm:w-auto",
+            "bg-surface",
+            "text-primary",
+            "font-label-caps",
+            "text-label-caps",
+            "py-stack-sm",
+            "px-margin-desktop",
+            "uppercase",
+            "border-2",
+            "border-primary",
+            "hover:bg-surface-container-highest",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "TrailForge",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Field Operations",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Unit 04 - Active",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "SEARCH OPERATIONS...",
+          "placeholder": "SEARCH OPERATIONS...",
+          "name": "",
+          "classes": [
+            "bg-transparent",
+            "border-none",
+            "focus:ring-0",
+            "font-label-caps",
+            "text-label-caps",
+            "w-full",
+            "text-primary",
+            "placeholder:text-on-surface-variant"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Operations",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "uppercase"
+          ],
+          "icon": "settings_remote",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Assignment",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "uppercase"
+          ],
+          "icon": "assignment_ind",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Recovery",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "uppercase"
+          ],
+          "icon": "settings_backup_restore",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Sync Settings",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "uppercase"
+          ],
+          "icon": "sync_alt",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "System Status",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "uppercase"
+          ],
+          "icon": "dns",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Clear All Filters",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "text-on-surface-variant",
+            "uppercase",
+            "underline",
+            "hover:text-primary",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings_remote",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "settings_remote",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "assignment_ind",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "assignment_ind",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings_backup_restore",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "settings_backup_restore",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "add",
+        "settings_remote",
+        "assignment_ind",
+        "settings_backup_restore",
+        "sync_alt",
+        "dns",
+        "search",
+        "cloud_off",
+        "sync",
+        "settings",
+        "person",
+        "wifi_off"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "surface-container-lowest": "#ffffff",
+        "surface-container": "#edeeef",
+        "on-secondary-container": "#643600",
+        "on-surface-variant": "#434843",
+        "inverse-primary": "#b4cdb8",
+        "on-tertiary-fixed": "#181a2e",
+        "surface-container-low": "#f3f4f5",
+        "primary-container": "#1b3022",
+        "tertiary-fixed": "#e0e0fc",
+        "on-background": "#191c1d",
+        "secondary-fixed": "#ffdcc1",
+        "surface": "#f8f9fa",
+        "surface-container-highest": "#e1e3e4",
+        "tertiary-container": "#282a3f",
+        "surface-dim": "#d9dadb",
+        "on-tertiary-container": "#9091aa",
+        "on-secondary": "#ffffff",
+        "secondary": "#8e4f00",
+        "on-error-container": "#93000a",
+        "on-tertiary-fixed-variant": "#43455b",
+        "primary-fixed": "#d0e9d4",
+        "on-primary-fixed-variant": "#364c3c",
+        "on-primary-container": "#819986",
+        "on-primary-fixed": "#0b2013",
+        "on-error": "#ffffff",
+        "primary": "#061b0e",
+        "surface-bright": "#f8f9fa",
+        "error-container": "#ffdad6",
+        "on-secondary-fixed-variant": "#6c3a00",
+        "on-tertiary": "#ffffff",
+        "on-surface": "#191c1d",
+        "tertiary": "#131629",
+        "tertiary-fixed-dim": "#c4c4df",
+        "surface-container-high": "#e7e8e9",
+        "inverse-on-surface": "#f0f1f2",
+        "outline": "#737973",
+        "on-primary": "#ffffff",
+        "error": "#ba1a1a",
+        "secondary-container": "#fe9415",
+        "on-secondary-fixed": "#2e1600",
+        "outline-variant": "#c3c8c1",
+        "surface-variant": "#e1e3e4",
+        "inverse-surface": "#2e3132",
+        "secondary-fixed-dim": "#ffb877",
+        "background": "#f8f9fa",
+        "surface-tint": "#4d6453",
+        "primary-fixed-dim": "#b4cdb8"
+      },
+      "fonts": [
+        "Hanken Grotesk",
+        "Inter",
+        "JetBrains Mono",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Operations",
+          "icon": "settings_remote",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Assignment",
+          "icon": "assignment_ind",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Recovery",
+          "icon": "settings_backup_restore",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Sync Settings",
+          "icon": "sync_alt",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "System Status",
+          "icon": "dns",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Clear All Filters",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings_remote",
+          "icon": "settings_remote",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "assignment_ind",
+          "icon": "assignment_ind",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings_backup_restore",
+          "icon": "settings_backup_restore",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "New Log",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "cloud_off",
+          "icon": "cloud_off",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "sync",
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "settings",
+          "icon": "settings",
+          "action": "navigate",
+          "route": "/settings",
+          "expectedBehavior": "navigate:/settings"
+        },
+        {
+          "kind": "button",
+          "label": "Create Kit",
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Retry Load",
+          "icon": null,
+          "action": "retry",
+          "expectedBehavior": "retry the failed action and show loading/error feedback"
+        },
+        {
+          "kind": "button",
+          "label": "Create First Kit",
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "TrailForge",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Field Operations",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Unit 04 - Active",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "SEARCH OPERATIONS...",
+          "type": "text",
+          "placeholder": "SEARCH OPERATIONS...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "TrailForge",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Field Operations",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Unit 04 - Active",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "New Log",
+          "icon": "add",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Operations",
+          "icon": "settings_remote",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Assignment",
+          "icon": "assignment_ind",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Recovery",
+          "icon": "settings_backup_restore",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Sync Settings",
+          "icon": "sync_alt",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "System Status",
+          "icon": "dns",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "settings_remote",
+          "icon": "settings_remote",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "assignment_ind",
+          "icon": "assignment_ind",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "settings_backup_restore",
+          "icon": "settings_backup_restore",
+          "route": "#",
+          "active": false
+        }
+      ],
+      "title": "Empty and Error Recovery - TrailForge Offline Kit"
+    },
+    "97b18301f5e34d21aa035b093f2c90d7": {
+      "screenId": "97b18301f5e34d21aa035b093f2c90d7",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "flex",
+            "justify-between",
+            "items-center",
+            "w-full",
+            "px-margin-desktop",
+            "h-16",
+            "z-50",
+            "bg-surface",
+            "dark:bg-background",
+            "border-b-2"
+          ],
+          "childCount": 4
+        },
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "hidden",
+            "md:flex",
+            "flex-col",
+            "h-full",
+            "py-stack-md",
+            "border-r-2",
+            "border-outline-variant",
+            "dark:border-outline",
+            "bg-surface-container",
+            "dark:bg-surface-container-low"
+          ],
+          "childCount": 7
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "ml-0",
+            "md:ml-64",
+            "p-margin-mobile",
+            "md:p-margin-desktop",
+            "overflow-y-auto",
+            "mt-16",
+            "bg-background"
+          ],
+          "childCount": 48
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Create Kit",
+          "classes": [
+            "bg-primary",
+            "text-on-primary",
+            "font-label-caps",
+            "text-label-caps",
+            "px-4",
+            "py-2",
+            "uppercase",
+            "border-2",
+            "border-primary",
+            "hover:bg-surface-container-highest",
+            "dark:hover:bg-surface-container-high",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "New Log",
+          "classes": [
+            "w-full",
+            "bg-primary",
+            "text-on-primary",
+            "font-label-caps",
+            "text-label-caps",
+            "py-2",
+            "uppercase",
+            "border-2",
+            "border-primary",
+            "hover:bg-surface-container-highest",
+            "transition-all"
+          ],
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "RECORDS",
+          "classes": [
+            "flex",
+            "items-center",
+            "gap-unit",
+            "bg-surface-container-high",
+            "border-2",
+            "border-outline-variant",
+            "px-3",
+            "py-1",
+            "font-label-caps",
+            "text-label-caps",
+            "text-on-surface",
+            "hover:bg-surface-container-highest"
+          ],
+          "icon": "search",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/search",
+          "expectedRoute": "/search",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "FILTER INSIGHTS",
+          "classes": [
+            "flex",
+            "items-center",
+            "gap-unit",
+            "bg-surface-container-high",
+            "border-2",
+            "border-outline-variant",
+            "px-3",
+            "py-1",
+            "font-label-caps",
+            "text-label-caps",
+            "text-on-surface",
+            "hover:bg-surface-container-highest"
+          ],
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "more_vert",
+          "classes": [
+            "text-outline",
+            "hover:text-primary"
+          ],
+          "icon": "more_vert",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "EXECUTE TRANSFER",
+          "classes": [
+            "w-full",
+            "bg-secondary-container",
+            "text-on-secondary-container",
+            "font-label-caps",
+            "text-label-caps",
+            "py-2",
+            "border-2",
+            "border-secondary-container",
+            "hover:bg-secondary",
+            "hover:text-on-secondary",
+            "transition-colors",
+            "mt-2"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Field Operations",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Unit 04 - Active",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "select",
+          "label": "select",
+          "placeholder": "",
+          "name": "",
+          "classes": [
+            "border-2",
+            "border-outline-variant",
+            "bg-surface",
+            "p-2",
+            "font-data-mono",
+            "text-data-mono",
+            "focus:border-primary",
+            "focus:ring-0",
+            "outline-none"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Operations",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "uppercase"
+          ],
+          "icon": "settings_remote",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Assignment",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "uppercase"
+          ],
+          "icon": "assignment_ind",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Recovery",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "uppercase"
+          ],
+          "icon": "settings_backup_restore",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Sync Settings",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "uppercase"
+          ],
+          "icon": "sync_alt",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "System Status",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "uppercase"
+          ],
+          "icon": "dns",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "search",
+        "sync",
+        "cloud_off",
+        "settings",
+        "settings_remote",
+        "assignment_ind",
+        "settings_backup_restore",
+        "sync_alt",
+        "dns",
+        "filter_list",
+        "check_circle",
+        "drag_indicator",
+        "more_vert",
+        "warning",
+        "swap_horiz",
+        "add",
+        "check"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbYT4SVIKML7bCwNJF0DraGPvTy_2tIbmHkEhvhDFTJ2XXqS01yhRELzlFY1PkGdZVQIlTck8lhSFgbAbBQnxEFE2_-fY3-uZ2hbE8Ulpat3f0flBHOL4S_97M-zyzgzO8-6K65IuhIqYGm1VoT1",
+          "alt": "User profile"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuA_cvfKbBD_YxparvrAO1HwswlMXtlKe-BL2OhdMdC9UmI7Q7lEhb9TPVhCaJhnAtKJghKuYZGH6CwwnKQIOx4UE7Ww6zp6ChL3L78G1YjiRvUmVgfi2W79kjHRmRgLPwShG6xAgXyGDWK3w3XsOr",
+          "alt": "TrailForge Logo"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "surface-container-lowest": "#ffffff",
+        "surface-container": "#edeeef",
+        "on-secondary-container": "#643600",
+        "on-surface-variant": "#434843",
+        "inverse-primary": "#b4cdb8",
+        "on-tertiary-fixed": "#181a2e",
+        "surface-container-low": "#f3f4f5",
+        "primary-container": "#1b3022",
+        "tertiary-fixed": "#e0e0fc",
+        "on-background": "#191c1d",
+        "secondary-fixed": "#ffdcc1",
+        "surface": "#f8f9fa",
+        "surface-container-highest": "#e1e3e4",
+        "tertiary-container": "#282a3f",
+        "surface-dim": "#d9dadb",
+        "on-tertiary-container": "#9091aa",
+        "on-secondary": "#ffffff",
+        "secondary": "#8e4f00",
+        "on-error-container": "#93000a",
+        "on-tertiary-fixed-variant": "#43455b",
+        "primary-fixed": "#d0e9d4",
+        "on-primary-fixed-variant": "#364c3c",
+        "on-primary-container": "#819986",
+        "on-primary-fixed": "#0b2013",
+        "on-error": "#ffffff",
+        "primary": "#061b0e",
+        "surface-bright": "#f8f9fa",
+        "error-container": "#ffdad6",
+        "on-secondary-fixed-variant": "#6c3a00",
+        "on-tertiary": "#ffffff",
+        "on-surface": "#191c1d",
+        "tertiary": "#131629",
+        "tertiary-fixed-dim": "#c4c4df",
+        "surface-container-high": "#e7e8e9",
+        "inverse-on-surface": "#f0f1f2",
+        "outline": "#737973",
+        "on-primary": "#ffffff",
+        "error": "#ba1a1a",
+        "secondary-container": "#fe9415",
+        "on-secondary-fixed": "#2e1600",
+        "outline-variant": "#c3c8c1",
+        "surface-variant": "#e1e3e4",
+        "inverse-surface": "#2e3132",
+        "secondary-fixed-dim": "#ffb877",
+        "background": "#f8f9fa",
+        "surface-tint": "#4d6453",
+        "primary-fixed-dim": "#b4cdb8"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Hanken Grotesk",
+        "Inter",
+        "JetBrains Mono"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col",
+        "gap": "2"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Operations",
+          "icon": "settings_remote",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Assignment",
+          "icon": "assignment_ind",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Recovery",
+          "icon": "settings_backup_restore",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Sync Settings",
+          "icon": "sync_alt",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "System Status",
+          "icon": "dns",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Create Kit",
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "New Log",
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "RECORDS",
+          "icon": "search",
+          "action": "navigate",
+          "route": "/search",
+          "expectedBehavior": "navigate:/search"
+        },
+        {
+          "kind": "button",
+          "label": "FILTER INSIGHTS",
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "more_vert",
+          "icon": "more_vert",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "EXECUTE TRANSFER",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Field Operations",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Unit 04 - Active",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "select",
+          "type": "select",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "Field Operations",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Unit 04 - Active",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "New Log",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Operations",
+          "icon": "settings_remote",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Assignment",
+          "icon": "assignment_ind",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Recovery",
+          "icon": "settings_backup_restore",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Sync Settings",
+          "icon": "sync_alt",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "System Status",
+          "icon": "dns",
+          "route": "#",
+          "active": false
+        }
+      ],
+      "title": "Gear Pack Assignment - TrailForge Offline Kit"
+    },
+    "aa3b6781ac914225b697177adb05e6ba": {
+      "screenId": "aa3b6781ac914225b697177adb05e6ba",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "flex",
+            "justify-between",
+            "items-center",
+            "w-full",
+            "px-margin-desktop",
+            "h-16",
+            "z-50",
+            "bg-surface",
+            "dark:bg-background",
+            "border-b-2"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "hidden",
+            "lg:flex",
+            "flex-col",
+            "h-full",
+            "py-stack-md",
+            "border-r-2",
+            "border-outline-variant",
+            "dark:border-outline",
+            "bg-surface-container",
+            "dark:bg-surface-container-low"
+          ],
+          "childCount": 4
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "w-full",
+            "lg:ml-64",
+            "mt-16",
+            "overflow-y-auto",
+            "bg-surface-container-lowest",
+            "p-margin-mobile",
+            "lg:p-margin-desktop"
+          ],
+          "childCount": 19
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "arrow_back",
+          "classes": [
+            "lg:hidden",
+            "text-primary",
+            "hover:bg-surface-container-highest",
+            "transition-colors",
+            "p-2",
+            "rounded"
+          ],
+          "icon": "arrow_back",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "sync",
+          "classes": [
+            "text-on-surface-variant",
+            "dark:text-outline",
+            "hover:bg-surface-container-highest",
+            "dark:hover:bg-surface-container-high",
+            "transition-colors",
+            "p-2",
+            "rounded"
+          ],
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "cloud_off",
+          "classes": [
+            "text-on-surface-variant",
+            "dark:text-outline",
+            "hover:bg-surface-container-highest",
+            "dark:hover:bg-surface-container-high",
+            "transition-colors",
+            "p-2",
+            "rounded"
+          ],
+          "icon": "cloud_off",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "settings",
+          "classes": [
+            "text-on-surface-variant",
+            "dark:text-outline",
+            "hover:bg-surface-container-highest",
+            "dark:hover:bg-surface-container-high",
+            "transition-colors",
+            "p-2",
+            "rounded"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/settings",
+          "expectedRoute": "/settings",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "New Log",
+          "classes": [
+            "w-full",
+            "bg-surface-container-highest",
+            "text-on-surface",
+            "font-label-caps",
+            "text-label-caps",
+            "py-3",
+            "border-2",
+            "border-outline",
+            "hover:bg-outline",
+            "transition-colors",
+            "uppercase",
+            "font-bold",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Cancel",
+          "classes": [
+            "px-6",
+            "py-3",
+            "border-2",
+            "border-outline",
+            "text-on-surface",
+            "font-label-caps",
+            "text-label-caps",
+            "uppercase",
+            "font-bold",
+            "hover:bg-surface-container-highest",
+            "transition-colors",
+            "order-2",
+            "sm:order-1"
+          ],
+          "icon": null,
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Kit",
+          "classes": [
+            "px-8",
+            "py-3",
+            "bg-primary",
+            "text-on-primary",
+            "font-label-caps",
+            "text-label-caps",
+            "uppercase",
+            "font-bold",
+            "border-2",
+            "border-primary",
+            "hover:bg-primary-container",
+            "hover:text-on-primary-container",
+            "transition-colors",
+            "order-1",
+            "sm:order-2",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2"
+          ],
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "Field Operations Unit 04 - Active",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "e.g., Alpha Sector Sweeper",
+          "placeholder": "e.g., Alpha Sector Sweeper",
+          "name": "kit-name",
+          "classes": [
+            "w-full",
+            "bg-surface-container-lowest",
+            "border-2",
+            "border-error",
+            "text-on-surface",
+            "font-body-md",
+            "text-body-md",
+            "px-4",
+            "py-3",
+            "focus:outline-none",
+            "focus:border-error",
+            "focus:ring-0"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "RT-XXXX-00",
+          "placeholder": "RT-XXXX-00",
+          "name": "route-id",
+          "classes": [
+            "w-full",
+            "bg-surface-container-lowest",
+            "border-2",
+            "border-outline-variant",
+            "text-on-surface",
+            "font-data-mono",
+            "text-data-mono",
+            "px-4",
+            "py-3",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring-0"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "select",
+          "label": "field-team",
+          "placeholder": "",
+          "name": "field-team",
+          "classes": [
+            "w-full",
+            "bg-surface-container-lowest",
+            "border-2",
+            "border-outline-variant",
+            "text-on-surface",
+            "font-body-md",
+            "text-body-md",
+            "px-4",
+            "py-3",
+            "appearance-none",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring-0"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "checkbox",
+          "label": "checkbox",
+          "placeholder": "",
+          "name": "",
+          "classes": [
+            "w-5",
+            "h-5",
+            "border-2",
+            "border-outline",
+            "appearance-none",
+            "bg-surface-container-lowest",
+            "checked:bg-primary",
+            "checked:border-primary",
+            "transition-colors",
+            "cursor-pointer",
+            "group-hover:border-primary"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Operations",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps"
+          ],
+          "icon": "settings_remote",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Assignment",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps"
+          ],
+          "icon": "assignment_ind",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Recovery",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps"
+          ],
+          "icon": "settings_backup_restore",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Sync Settings",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps"
+          ],
+          "icon": "sync_alt",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "System Status",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps"
+          ],
+          "icon": "dns",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "arrow_back",
+        "edit_note",
+        "sync",
+        "cloud_off",
+        "settings",
+        "settings_remote",
+        "assignment_ind",
+        "settings_backup_restore",
+        "sync_alt",
+        "dns",
+        "add",
+        "error",
+        "arrow_drop_down",
+        "check",
+        "save"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "surface-container-lowest": "#ffffff",
+        "surface-container": "#edeeef",
+        "on-secondary-container": "#643600",
+        "on-surface-variant": "#434843",
+        "inverse-primary": "#b4cdb8",
+        "on-tertiary-fixed": "#181a2e",
+        "surface-container-low": "#f3f4f5",
+        "primary-container": "#1b3022",
+        "tertiary-fixed": "#e0e0fc",
+        "on-background": "#191c1d",
+        "secondary-fixed": "#ffdcc1",
+        "surface": "#f8f9fa",
+        "surface-container-highest": "#e1e3e4",
+        "tertiary-container": "#282a3f",
+        "surface-dim": "#d9dadb",
+        "on-tertiary-container": "#9091aa",
+        "on-secondary": "#ffffff",
+        "secondary": "#8e4f00",
+        "on-error-container": "#93000a",
+        "on-tertiary-fixed-variant": "#43455b",
+        "primary-fixed": "#d0e9d4",
+        "on-primary-fixed-variant": "#364c3c",
+        "on-primary-container": "#819986",
+        "on-primary-fixed": "#0b2013",
+        "on-error": "#ffffff",
+        "primary": "#061b0e",
+        "surface-bright": "#f8f9fa",
+        "error-container": "#ffdad6",
+        "on-secondary-fixed-variant": "#6c3a00",
+        "on-tertiary": "#ffffff",
+        "on-surface": "#191c1d",
+        "tertiary": "#131629",
+        "tertiary-fixed-dim": "#c4c4df",
+        "surface-container-high": "#e7e8e9",
+        "inverse-on-surface": "#f0f1f2",
+        "outline": "#737973",
+        "on-primary": "#ffffff",
+        "error": "#ba1a1a",
+        "secondary-container": "#fe9415",
+        "on-secondary-fixed": "#2e1600",
+        "outline-variant": "#c3c8c1",
+        "surface-variant": "#e1e3e4",
+        "inverse-surface": "#2e3132",
+        "secondary-fixed-dim": "#ffb877",
+        "background": "#f8f9fa",
+        "surface-tint": "#4d6453",
+        "primary-fixed-dim": "#b4cdb8"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Hanken Grotesk",
+        "Inter",
+        "JetBrains Mono"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col",
+        "gap": "4"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Operations",
+          "icon": "settings_remote",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Assignment",
+          "icon": "assignment_ind",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Recovery",
+          "icon": "settings_backup_restore",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Sync Settings",
+          "icon": "sync_alt",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "System Status",
+          "icon": "dns",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "arrow_back",
+          "icon": "arrow_back",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "sync",
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "cloud_off",
+          "icon": "cloud_off",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "settings",
+          "icon": "settings",
+          "action": "navigate",
+          "route": "/settings",
+          "expectedBehavior": "navigate:/settings"
+        },
+        {
+          "kind": "button",
+          "label": "New Log",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Cancel",
+          "icon": null,
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Kit",
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "Field Operations Unit 04 - Active",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "e.g., Alpha Sector Sweeper",
+          "type": "text",
+          "placeholder": "e.g., Alpha Sector Sweeper",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "RT-XXXX-00",
+          "type": "text",
+          "placeholder": "RT-XXXX-00",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "field-team",
+          "type": "select",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "checkbox",
+          "type": "checkbox",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "Field Operations Unit 04 - Active",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Operations",
+          "icon": "settings_remote",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Assignment",
+          "icon": "assignment_ind",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Recovery",
+          "icon": "settings_backup_restore",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Sync Settings",
+          "icon": "sync_alt",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "System Status",
+          "icon": "dns",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "New Log",
+          "icon": "add",
+          "active": false
+        }
+      ],
+      "title": "Kit Editor - TrailForge Offline Kit"
+    }
+  }
+}

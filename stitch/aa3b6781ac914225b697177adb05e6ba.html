@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TrailForge - Kit Editor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container": "#edeeef",
+                      "on-secondary-container": "#643600",
+                      "on-surface-variant": "#434843",
+                      "inverse-primary": "#b4cdb8",
+                      "on-tertiary-fixed": "#181a2e",
+                      "surface-container-low": "#f3f4f5",
+                      "primary-container": "#1b3022",
+                      "tertiary-fixed": "#e0e0fc",
+                      "on-background": "#191c1d",
+                      "secondary-fixed": "#ffdcc1",
+                      "surface": "#f8f9fa",
+                      "surface-container-highest": "#e1e3e4",
+                      "tertiary-container": "#282a3f",
+                      "surface-dim": "#d9dadb",
+                      "on-tertiary-container": "#9091aa",
+                      "on-secondary": "#ffffff",
+                      "secondary": "#8e4f00",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-fixed-variant": "#43455b",
+                      "primary-fixed": "#d0e9d4",
+                      "on-primary-fixed-variant": "#364c3c",
+                      "on-primary-container": "#819986",
+                      "on-primary-fixed": "#0b2013",
+                      "on-error": "#ffffff",
+                      "primary": "#061b0e",
+                      "surface-bright": "#f8f9fa",
+                      "error-container": "#ffdad6",
+                      "on-secondary-fixed-variant": "#6c3a00",
+                      "on-tertiary": "#ffffff",
+                      "on-surface": "#191c1d",
+                      "tertiary": "#131629",
+                      "tertiary-fixed-dim": "#c4c4df",
+                      "surface-container-high": "#e7e8e9",
+                      "inverse-on-surface": "#f0f1f2",
+                      "outline": "#737973",
+                      "on-primary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "secondary-container": "#fe9415",
+                      "on-secondary-fixed": "#2e1600",
+                      "outline-variant": "#c3c8c1",
+                      "surface-variant": "#e1e3e4",
+                      "inverse-surface": "#2e3132",
+                      "secondary-fixed-dim": "#ffb877",
+                      "background": "#f8f9fa",
+                      "surface-tint": "#4d6453",
+                      "primary-fixed-dim": "#b4cdb8"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "stack-md": "16px",
+                      "margin-desktop": "32px",
+                      "stack-sm": "8px",
+                      "unit": "4px",
+                      "stack-xs": "4px",
+                      "margin-mobile": "16px",
+                      "max-width": "1200px",
+                      "gutter": "12px"
+              },
+              "fontFamily": {
+                      "label-caps": [
+                              "JetBrains Mono"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "data-mono": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-lg-mobile": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "data-mono": [
+                              "13px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "20px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "800"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background h-screen flex overflow-hidden">
+<!-- TopAppBar (Visible on Desktop for standard navigation, though usually hidden in transactional/task-focused flows. Keeping here as requested "navigation preserved" but modified for editor context) -->
+<header class="flex justify-between items-center w-full px-margin-desktop h-16 z-50 bg-surface dark:bg-background border-b-2 border-outline-variant dark:border-outline fixed top-0 left-0 lg:left-64 right-0 lg:w-[calc(100%-16rem)]">
+<div class="flex items-center gap-4">
+<!-- Back button for mobile/compact view -->
+<button class="lg:hidden text-primary hover:bg-surface-container-highest transition-colors p-2 rounded">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-extrabold tracking-tighter text-primary dark:text-primary-fixed-dim">TrailForge</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 px-3 py-1 bg-surface-container border border-outline-variant text-on-surface-variant font-label-caps text-label-caps rounded-sm">
+<span class="material-symbols-outlined text-[16px]" data-icon="edit_note">edit_note</span>
+                Draft - Unsaved changes
+            </div>
+<button class="text-on-surface-variant dark:text-outline hover:bg-surface-container-highest dark:hover:bg-surface-container-high transition-colors p-2 rounded">
+<span class="material-symbols-outlined" data-icon="sync">sync</span>
+</button>
+<button class="text-on-surface-variant dark:text-outline hover:bg-surface-container-highest dark:hover:bg-surface-container-high transition-colors p-2 rounded">
+<span class="material-symbols-outlined" data-icon="cloud_off">cloud_off</span>
+</button>
+<button class="text-on-surface-variant dark:text-outline hover:bg-surface-container-highest dark:hover:bg-surface-container-high transition-colors p-2 rounded">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</div>
+</header>
+<!-- SideNavBar (Desktop Only) -->
+<nav class="hidden lg:flex flex-col h-full py-stack-md border-r-2 border-outline-variant dark:border-outline bg-surface-container dark:bg-surface-container-low fixed left-0 top-0 w-64 z-40">
+<div class="px-6 pb-6 border-b-2 border-outline-variant mb-4">
+<h2 class="font-headline-md text-headline-md font-black text-primary dark:text-primary-fixed-dim uppercase">Field Operations</h2>
+<p class="font-data-mono text-data-mono text-on-surface-variant mt-1">Unit 04 - Active</p>
+</div>
+<div class="flex-1 overflow-y-auto px-4 space-y-2">
+<!-- Active state mapping to "Operations" as this is an editor likely nested under it, though strictly a transactional page might hide this. Given "navigation preserved", applying active to the parent section. -->
+<a class="flex items-center gap-3 px-4 py-3 bg-primary text-on-primary dark:bg-primary-container dark:text-on-primary-container font-bold border-l-4 border-secondary-container hover:bg-surface-container-highest dark:hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="settings_remote">settings_remote</span>
+<span class="font-label-caps text-label-caps">Operations</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-outline hover:bg-surface-container-highest dark:hover:bg-surface-container-high transition-all border-l-4 border-transparent" href="#">
+<span class="material-symbols-outlined" data-icon="assignment_ind">assignment_ind</span>
+<span class="font-label-caps text-label-caps">Assignment</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-outline hover:bg-surface-container-highest dark:hover:bg-surface-container-high transition-all border-l-4 border-transparent" href="#">
+<span class="material-symbols-outlined" data-icon="settings_backup_restore">settings_backup_restore</span>
+<span class="font-label-caps text-label-caps">Recovery</span>
+</a>
+</div>
+<div class="px-4 pt-4 border-t-2 border-outline-variant mt-auto space-y-2">
+<a class="flex items-center gap-3 px-4 py-2 text-on-surface-variant hover:bg-surface-container-highest transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="sync_alt">sync_alt</span>
+<span class="font-label-caps text-label-caps">Sync Settings</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-on-surface-variant hover:bg-surface-container-highest transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="dns">dns</span>
+<span class="font-label-caps text-label-caps">System Status</span>
+</a>
+<div class="mt-4 px-2">
+<button class="w-full bg-surface-container-highest text-on-surface font-label-caps text-label-caps py-3 border-2 border-outline hover:bg-outline transition-colors uppercase font-bold flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="add">add</span>
+                    New Log
+                </button>
+</div>
+</div>
+</nav>
+<!-- Main Canvas -->
+<main class="flex-1 w-full lg:ml-64 mt-16 overflow-y-auto bg-surface-container-lowest p-margin-mobile lg:p-margin-desktop">
+<div class="max-w-3xl mx-auto">
+<!-- Header Area -->
+<div class="mb-8 pb-4 border-b-2 border-outline flex justify-between items-end">
+<div>
+<h2 class="font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary uppercase">Kit Editor</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-xl">Configure offline assets and requirements for field deployment.</p>
+</div>
+</div>
+<!-- Form Form -->
+<form class="space-y-8 bg-surface p-6 border-2 border-outline-variant shadow-sm relative">
+<!-- Grid Layout for Fields -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-gutter gap-y-stack-md">
+<!-- Kit Name (Required, Error State) -->
+<div class="col-span-1 md:col-span-2 space-y-2">
+<label class="block font-label-caps text-label-caps text-on-surface uppercase tracking-wider flex items-center gap-1" for="kit-name">
+                            Kit Name
+                            <span class="text-error">*</span>
+</label>
+<div class="relative">
+<input aria-describedby="kit-name-error" aria-invalid="true" class="w-full bg-surface-container-lowest border-2 border-error text-on-surface font-body-md text-body-md px-4 py-3 focus:outline-none focus:border-error focus:ring-0" id="kit-name" name="kit-name" placeholder="e.g., Alpha Sector Sweeper" type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-3 text-error" data-icon="error">error</span>
+</div>
+<p class="font-label-caps text-label-caps text-error" id="kit-name-error">Kit Name is required.</p>
+</div>
+<!-- Route ID -->
+<div class="col-span-1 space-y-2">
+<label class="block font-label-caps text-label-caps text-on-surface uppercase tracking-wider" for="route-id">Route ID</label>
+<input class="w-full bg-surface-container-lowest border-2 border-outline-variant text-on-surface font-data-mono text-data-mono px-4 py-3 focus:outline-none focus:border-primary focus:ring-0" id="route-id" name="route-id" placeholder="RT-XXXX-00" type="text"/>
+<p class="font-label-caps text-label-caps text-on-surface-variant text-[10px]">Must be alphanumeric.</p>
+</div>
+<!-- Assigned Field Team -->
+<div class="col-span-1 space-y-2">
+<label class="block font-label-caps text-label-caps text-on-surface uppercase tracking-wider" for="field-team">Assigned Field Team</label>
+<div class="relative">
+<select class="w-full bg-surface-container-lowest border-2 border-outline-variant text-on-surface font-body-md text-body-md px-4 py-3 appearance-none focus:outline-none focus:border-primary focus:ring-0" id="field-team" name="field-team">
+<option disabled="" selected="" value="">Select a unit...</option>
+<option value="unit-01">Unit 01 - Alpha</option>
+<option value="unit-02">Unit 02 - Bravo</option>
+<option value="unit-03">Unit 03 - Charlie</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-outline pointer-events-none" data-icon="arrow_drop_down">arrow_drop_down</span>
+</div>
+</div>
+</div>
+<hr class="border-t-2 border-outline-variant border-dashed"/>
+<!-- Safety Equipment Checklist -->
+<div class="space-y-4">
+<label class="block font-label-caps text-label-caps text-on-surface uppercase tracking-wider">Safety Equipment Checklist</label>
+<div class="bg-surface-container-low border-2 border-outline-variant p-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="relative flex items-center justify-center">
+<input class="w-5 h-5 border-2 border-outline appearance-none bg-surface-container-lowest checked:bg-primary checked:border-primary transition-colors cursor-pointer group-hover:border-primary" type="checkbox"/>
+<span class="material-symbols-outlined text-[16px] text-on-primary absolute pointer-events-none opacity-0 peer-checked:opacity-100" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Emergency Beacon</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="relative flex items-center justify-center">
+<input checked="" class="w-5 h-5 border-2 border-outline appearance-none bg-surface-container-lowest checked:bg-primary checked:border-primary transition-colors cursor-pointer group-hover:border-primary" type="checkbox"/>
+<span class="material-symbols-outlined text-[16px] text-on-primary absolute pointer-events-none" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">First Aid Kit (Level 2)</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="relative flex items-center justify-center">
+<input class="w-5 h-5 border-2 border-outline appearance-none bg-surface-container-lowest checked:bg-primary checked:border-primary transition-colors cursor-pointer group-hover:border-primary" type="checkbox"/>
+<span class="material-symbols-outlined text-[16px] text-on-primary absolute pointer-events-none opacity-0 peer-checked:opacity-100" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Flare Gun</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="relative flex items-center justify-center">
+<input class="w-5 h-5 border-2 border-outline appearance-none bg-surface-container-lowest checked:bg-primary checked:border-primary transition-colors cursor-pointer group-hover:border-primary" type="checkbox"/>
+<span class="material-symbols-outlined text-[16px] text-on-primary absolute pointer-events-none opacity-0 peer-checked:opacity-100" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Thermal Blanket</span>
+</label>
+</div>
+</div>
+<!-- Offline Cache Mode -->
+<div class="flex items-center justify-between p-4 border-2 border-outline-variant bg-surface-container-lowest">
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface uppercase tracking-wider mb-1">Offline Cache Mode</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">Force pre-download of all high-res route tiles.</span>
+</div>
+<!-- Rugged Toggle -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-14 h-7 bg-surface-container-highest border-2 border-outline peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary/20 rounded-none peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface-variant after:border-outline after:border after:h-[20px] after:w-[24px] after:transition-all peer-checked:bg-primary peer-checked:after:bg-on-primary peer-checked:border-primary"></div>
+</label>
+</div>
+<!-- Form Actions -->
+<div class="pt-6 border-t-2 border-outline flex flex-col sm:flex-row justify-end gap-4 mt-8">
+<button class="px-6 py-3 border-2 border-outline text-on-surface font-label-caps text-label-caps uppercase font-bold hover:bg-surface-container-highest transition-colors order-2 sm:order-1" type="button">
+                        Cancel
+                    </button>
+<button class="px-8 py-3 bg-primary text-on-primary font-label-caps text-label-caps uppercase font-bold border-2 border-primary hover:bg-primary-container hover:text-on-primary-container transition-colors order-1 sm:order-2 flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-[18px]" data-icon="save">save</span>
+                        Save Kit
+                    </button>
+</div>
+</form>
+</div>
+</main>
+<script>
+        // Simple JS for toggle interaction visualization (checkbox visual hack requires this for exact rugged style requested)
+        // Note: The pure CSS toggle above works, but for complex rugged inputs, sometimes a bit of JS helps with state management.
+        // Left as pure CSS for robust offline performance as per 'Functionalism' ethos.
+    </script>
+</body></html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gear Pack Assignment - TrailForge</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700;800&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#edeeef",
+                        "on-secondary-container": "#643600",
+                        "on-surface-variant": "#434843",
+                        "inverse-primary": "#b4cdb8",
+                        "on-tertiary-fixed": "#181a2e",
+                        "surface-container-low": "#f3f4f5",
+                        "primary-container": "#1b3022",
+                        "tertiary-fixed": "#e0e0fc",
+                        "on-background": "#191c1d",
+                        "secondary-fixed": "#ffdcc1",
+                        "surface": "#f8f9fa",
+                        "surface-container-highest": "#e1e3e4",
+                        "tertiary-container": "#282a3f",
+                        "surface-dim": "#d9dadb",
+                        "on-tertiary-container": "#9091aa",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#8e4f00",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#43455b",
+                        "primary-fixed": "#d0e9d4",
+                        "on-primary-fixed-variant": "#364c3c",
+                        "on-primary-container": "#819986",
+                        "on-primary-fixed": "#0b2013",
+                        "on-error": "#ffffff",
+                        "primary": "#061b0e",
+                        "surface-bright": "#f8f9fa",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#6c3a00",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#191c1d",
+                        "tertiary": "#131629",
+                        "tertiary-fixed-dim": "#c4c4df",
+                        "surface-container-high": "#e7e8e9",
+                        "inverse-on-surface": "#f0f1f2",
+                        "outline": "#737973",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#fe9415",
+                        "on-secondary-fixed": "#2e1600",
+                        "outline-variant": "#c3c8c1",
+                        "surface-variant": "#e1e3e4",
+                        "inverse-surface": "#2e3132",
+                        "secondary-fixed-dim": "#ffb877",
+                        "background": "#f8f9fa",
+                        "surface-tint": "#4d6453",
+                        "primary-fixed-dim": "#b4cdb8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "margin-desktop": "32px",
+                        "stack-sm": "8px",
+                        "unit": "4px",
+                        "stack-xs": "4px",
+                        "margin-mobile": "16px",
+                        "max-width": "1200px",
+                        "gutter": "12px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["JetBrains Mono"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "data-mono": ["JetBrains Mono"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "body-md": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-lg": ["16px", { "lineHeight": "1.5", "fontWeight": "500" }],
+                        "data-mono": ["13px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "headline-md": ["20px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "1.2", "fontWeight": "800" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        body { background-color: #f8f9fa; color: #191c1d; }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-background text-on-background">
+<!-- TopAppBar Shared Component -->
+<header class="flex justify-between items-center w-full px-margin-desktop h-16 z-50 bg-surface dark:bg-background border-b-2 border-outline-variant dark:border-outline docked full-width top-0">
+<div class="flex items-center gap-stack-md">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed text-2xl">search</span>
+<div class="font-headline-md text-headline-md font-extrabold tracking-tighter text-primary dark:text-primary-fixed-dim">TrailForge</div>
+</div>
+<div class="flex items-center gap-stack-md">
+<button class="bg-primary text-on-primary font-label-caps text-label-caps px-4 py-2 uppercase border-2 border-primary hover:bg-surface-container-highest dark:hover:bg-surface-container-high transition-colors">Create Kit</button>
+<div class="flex gap-stack-sm text-on-surface-variant dark:text-outline">
+<span class="material-symbols-outlined cursor-pointer hover:bg-surface-container-highest dark:hover:bg-surface-container-high transition-colors p-1" data-icon="sync">sync</span>
+<span class="material-symbols-outlined cursor-pointer hover:bg-surface-container-highest dark:hover:bg-surface-container-high transition-colors p-1" data-icon="cloud_off">cloud_off</span>
+<span class="material-symbols-outlined cursor-pointer hover:bg-surface-container-highest dark:hover:bg-surface-container-high transition-colors p-1" data-icon="settings">settings</span>
+</div>
+<img alt="User profile" class="w-8 h-8 border-2 border-outline-variant object-cover ml-stack-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbYT4SVIKML7bCwNJF0DraGPvTy_2tIbmHkEhvhDFTJ2XXqS01yhRELzlFY1PkGdZVQIlTck8lhSFgbAbBQnxEFE2_-fY3-uZ2hbE8Ulpat3f0flBHOL4S_97M-zyzgzO8-6K65IuhIqYGm1VoT16mwEm1cbVFTRgBGH6-KlDXE05IbZJEuVY5XDzuTtbY7GtZTCCydMD0y4hx__KyPG0kl4yiBMWnyBdRcdVfjPUP_dC0gFsa4IoLBS1wyE4J44yYOFgqta9437s"/>
+</div>
+</header>
+<div class="flex flex-1 overflow-hidden">
+<!-- SideNavBar Shared Component -->
+<nav class="hidden md:flex flex-col h-full py-stack-md border-r-2 border-outline-variant dark:border-outline bg-surface-container dark:bg-surface-container-low fixed left-0 top-16 w-64 z-40">
+<div class="px-stack-md mb-stack-md flex items-center gap-stack-sm">
+<img alt="TrailForge Logo" class="w-10 h-10 border-2 border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_cvfKbBD_YxparvrAO1HwswlMXtlKe-BL2OhdMdC9UmI7Q7lEhb9TPVhCaJhnAtKJghKuYZGH6CwwnKQIOx4UE7Ww6zp6ChL3L78G1YjiRvUmVgfi2W79kjHRmRgLPwShG6xAgXyGDWK3w3XsOrwNbC_ril2StDCxfvQndviotTB0_NAXGkUjbpe9fdnbz2yGf9yqrKMqO8JbLspLp7KMtONyPcmaDxroS-qTOk-0mGSswjhs7SI1zcUhWI0zYha35d2U-g0UZJI"/>
+<div>
+<div class="font-headline-md text-headline-md font-black text-primary dark:text-primary-fixed-dim uppercase leading-none">Field Operations</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant mt-unit">Unit 04 - Active</div>
+</div>
+</div>
+<div class="px-stack-md mb-stack-md">
+<button class="w-full bg-primary text-on-primary font-label-caps text-label-caps py-2 uppercase border-2 border-primary hover:bg-surface-container-highest transition-all">New Log</button>
+</div>
+<div class="flex-1 overflow-y-auto mt-stack-md">
+<a class="flex items-center gap-stack-sm px-stack-md py-3 text-on-surface-variant dark:text-outline hover:bg-surface-container-highest dark:hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">settings_remote</span>
+<span class="font-label-caps text-label-caps uppercase">Operations</span>
+</a>
+<a class="flex items-center gap-stack-sm px-stack-md py-3 bg-primary text-on-primary dark:bg-primary-container dark:text-on-primary-container font-bold border-l-4 border-secondary-container transition-all" href="#">
+<span class="material-symbols-outlined fill">assignment_ind</span>
+<span class="font-label-caps text-label-caps uppercase">Assignment</span>
+</a>
+<a class="flex items-center gap-stack-sm px-stack-md py-3 text-on-surface-variant dark:text-outline hover:bg-surface-container-highest dark:hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">settings_backup_restore</span>
+<span class="font-label-caps text-label-caps uppercase">Recovery</span>
+</a>
+</div>
+<div class="mt-auto px-stack-md py-stack-md border-t-2 border-outline-variant">
+<a class="flex items-center gap-stack-sm py-2 text-on-surface-variant hover:bg-surface-container-highest transition-all" href="#">
+<span class="material-symbols-outlined">sync_alt</span>
+<span class="font-label-caps text-label-caps uppercase">Sync Settings</span>
+</a>
+<a class="flex items-center gap-stack-sm py-2 text-on-surface-variant hover:bg-surface-container-highest transition-all" href="#">
+<span class="material-symbols-outlined">dns</span>
+<span class="font-label-caps text-label-caps uppercase">System Status</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 ml-0 md:ml-64 p-margin-mobile md:p-margin-desktop overflow-y-auto mt-16 bg-background">
+<div class="max-w-max-width mx-auto space-y-stack-md">
+<!-- Page Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between border-b-2 border-outline-variant pb-stack-sm mb-stack-md">
+<div>
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Gear Pack Assignment</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-unit">Manage and distribute offline readiness kits.</p>
+</div>
+<div class="mt-stack-sm md:mt-0 flex gap-stack-sm">
+<button class="flex items-center gap-unit bg-surface-container-high border-2 border-outline-variant px-3 py-1 font-label-caps text-label-caps text-on-surface hover:bg-surface-container-highest">
+<span class="material-symbols-outlined text-[18px]">search</span>
+                            SEARCH RECORDS
+                        </button>
+<button class="flex items-center gap-unit bg-surface-container-high border-2 border-outline-variant px-3 py-1 font-label-caps text-label-caps text-on-surface hover:bg-surface-container-highest">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+                            FILTER INSIGHTS
+                        </button>
+</div>
+</div>
+<!-- Readiness Bar -->
+<div class="flex items-center justify-between bg-primary text-on-primary p-stack-sm border-2 border-primary">
+<div class="flex items-center gap-stack-sm font-label-caps text-label-caps">
+<span class="material-symbols-outlined">check_circle</span>
+                        GLOBAL KIT STATUS: SYNCED
+                    </div>
+<div class="font-data-mono text-data-mono">LAST SYNC: 10 MINS AGO</div>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-stack-md">
+<!-- Teams & Packs List (Main Span) -->
+<div class="lg:col-span-2 bg-surface border-2 border-outline-variant flex flex-col">
+<div class="p-stack-sm border-b-2 border-outline-variant bg-surface-container-low flex justify-between items-center">
+<h2 class="font-label-caps text-label-caps text-on-surface">ACTIVE FIELD TEAMS</h2>
+<span class="font-data-mono text-data-mono text-on-surface-variant">4 TEAMS DEPLOYED</span>
+</div>
+<div class="flex-1 overflow-auto">
+<!-- Team Row 1 -->
+<div class="border-b border-outline-variant p-stack-sm hover:bg-surface-container-lowest transition-colors flex items-center justify-between group">
+<div class="flex items-center gap-stack-md">
+<div class="cursor-move text-outline group-hover:text-primary">
+<span class="material-symbols-outlined">drag_indicator</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary">Team Sierra</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant">SECTOR 7G</div>
+</div>
+</div>
+<div class="flex items-center gap-stack-md">
+<div class="bg-primary-container text-on-primary-container px-2 py-1 font-label-caps text-label-caps flex items-center gap-unit border border-primary-container">
+<span class="material-symbols-outlined text-[16px]">inventory_2</span>
+                                        5/5 PACKED
+                                    </div>
+<button class="text-outline hover:text-primary"><span class="material-symbols-outlined">more_vert</span></button>
+</div>
+</div>
+<!-- Team Row 2 (Warning) -->
+<div class="border-b border-outline-variant p-stack-sm hover:bg-surface-container-lowest transition-colors flex items-center justify-between bg-error-container/20 group">
+<div class="flex items-center gap-stack-md">
+<div class="cursor-move text-outline group-hover:text-primary">
+<span class="material-symbols-outlined">drag_indicator</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary">Echo Squad</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant">NORTH RIDGE</div>
+</div>
+</div>
+<div class="flex items-center gap-stack-md">
+<div class="flex items-center gap-unit text-error font-label-caps text-label-caps border border-error px-2 py-1 bg-surface">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+                                        STALE - 24H
+                                    </div>
+<div class="bg-surface-container text-on-surface px-2 py-1 font-label-caps text-label-caps flex items-center gap-unit border border-outline-variant">
+<span class="material-symbols-outlined text-[16px]">inventory_2</span>
+                                        4/5 PACKED
+                                    </div>
+<button class="text-outline hover:text-primary"><span class="material-symbols-outlined">more_vert</span></button>
+</div>
+</div>
+<!-- Team Row 3 -->
+<div class="border-b border-outline-variant p-stack-sm hover:bg-surface-container-lowest transition-colors flex items-center justify-between group">
+<div class="flex items-center gap-stack-md">
+<div class="cursor-move text-outline group-hover:text-primary">
+<span class="material-symbols-outlined">drag_indicator</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary">Alpha Unit</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant">BASE CAMP</div>
+</div>
+</div>
+<div class="flex items-center gap-stack-md">
+<div class="bg-primary-container text-on-primary-container px-2 py-1 font-label-caps text-label-caps flex items-center gap-unit border border-primary-container">
+<span class="material-symbols-outlined text-[16px]">inventory_2</span>
+                                        2/2 PACKED
+                                    </div>
+<button class="text-outline hover:text-primary"><span class="material-symbols-outlined">more_vert</span></button>
+</div>
+</div>
+</div>
+</div>
+<!-- Side Panel: Activity & Quick Assign -->
+<div class="space-y-stack-md">
+<!-- Quick Assign Action Area -->
+<div class="bg-surface border-2 border-outline-variant p-stack-sm">
+<h3 class="font-label-caps text-label-caps text-on-surface mb-stack-sm">QUICK REASSIGN</h3>
+<div class="space-y-stack-sm">
+<div class="flex flex-col">
+<label class="font-label-caps text-label-caps text-on-surface-variant mb-unit">SELECT PACK</label>
+<select class="border-2 border-outline-variant bg-surface p-2 font-data-mono text-data-mono focus:border-primary focus:ring-0 outline-none">
+<option>Pack #405 (Unassigned)</option>
+<option>Pack #406 (Unassigned)</option>
+<option>Pack #201 (Echo Squad)</option>
+</select>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps text-label-caps text-on-surface-variant mb-unit">TARGET TEAM</label>
+<select class="border-2 border-outline-variant bg-surface p-2 font-data-mono text-data-mono focus:border-primary focus:ring-0 outline-none">
+<option>Echo Squad</option>
+<option>Team Sierra</option>
+<option>Alpha Unit</option>
+</select>
+</div>
+<button class="w-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps py-2 border-2 border-secondary-container hover:bg-secondary hover:text-on-secondary transition-colors mt-2">
+                                    EXECUTE TRANSFER
+                                </button>
+</div>
+</div>
+<!-- Recent Activity Log -->
+<div class="bg-surface border-2 border-outline-variant flex flex-col h-[250px]">
+<div class="p-stack-sm border-b-2 border-outline-variant bg-surface-container-low">
+<h3 class="font-label-caps text-label-caps text-on-surface">RECENT ACTIVITY</h3>
+</div>
+<div class="flex-1 overflow-y-auto p-stack-sm space-y-stack-sm font-data-mono text-data-mono text-on-surface-variant">
+<div class="flex gap-2">
+<span class="text-primary-container"><span class="material-symbols-outlined text-[14px]">swap_horiz</span></span>
+<span>[10:42] Pack #402 moved to Sierra.</span>
+</div>
+<div class="flex gap-2 text-error">
+<span><span class="material-symbols-outlined text-[14px]">warning</span></span>
+<span>[09:15] Echo Squad reported Stale (24h+).</span>
+</div>
+<div class="flex gap-2">
+<span class="text-primary-container"><span class="material-symbols-outlined text-[14px]">add</span></span>
+<span>[08:00] Pack #405 provisioned (Base).</span>
+</div>
+<div class="flex gap-2">
+<span class="text-primary-container"><span class="material-symbols-outlined text-[14px]">check</span></span>
+<span>[07:30] Sync completed successfully.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>
