@@ -13,17 +13,24 @@ import { loadTrailforgeSnapshot, persistTrailforgeState } from './features/trail
 import {
   createTrailforgeAppState,
   trailforgeReducer,
+  type TrailforgeRecord,
   type TrailforgePanel,
 } from './features/trailforge-offline-kit/trailforge-offline-kit.store';
 
 type RuntimeActions = Record<string, () => void>;
+type RuntimeBridge = {
+  state: ReturnType<typeof createTrailforgeAppState>;
+  actions: RuntimeActions;
+};
+type RuntimeGlobal = typeof globalThis & { app?: RuntimeBridge };
+
+const trailforgeCopy = {
+  untitledKitName: 'Untitled Offline Kit',
+};
 
 declare global {
   interface Window {
-    app?: {
-      state: ReturnType<typeof createTrailforgeAppState>;
-      actions: RuntimeActions;
-    };
+    app?: RuntimeBridge;
   }
 }
 
@@ -42,8 +49,8 @@ export default function App() {
       navigateRecovery: () => dispatch({ type: 'navigate', panel: 'recovery' }),
       navigateSyncSettings: () => dispatch({ type: 'navigate', panel: 'sync-settings' }),
       navigateSystemStatus: () => dispatch({ type: 'navigate', panel: 'system-status' }),
-      createKit: () => dispatch({ type: 'createKit' }),
-      saveKit: () => dispatch({ type: 'saveKit' }),
+      createKit: () => dispatch({ type: 'createKit', draft: createDraftRecord() }),
+      saveKit: () => dispatch({ type: 'saveKit', updatedAt: new Date().toISOString() }),
       cancelEdit: () => dispatch({ type: 'navigate', panel: 'operations' }),
       retryLoad: () => {
         const snapshot = loadTrailforgeSnapshot();
@@ -65,8 +72,12 @@ export default function App() {
   }, [state]);
 
   useEffect(() => {
-    window.app = { state, actions };
-    (globalThis as typeof globalThis & { app?: Window['app'] }).app = { state, actions };
+    const appData = { state, actions };
+    setRuntimeBridge(appData);
+
+    return () => {
+      clearRuntimeBridge();
+    };
   }, [actions, state]);
 
   const navigationActions = {
@@ -82,6 +93,34 @@ export default function App() {
       {renderActiveScreen(state.activePanel, actions, navigationActions)}
     </div>
   );
+}
+
+function createDraftRecord(): TrailforgeRecord {
+  const createdAt = new Date().toISOString();
+  return {
+    id: `kit-${crypto.randomUUID()}`,
+    name: trailforgeCopy.untitledKitName,
+    code: 'RT-NEW-00',
+    status: 'draft',
+    panel: 'editor',
+    updatedAt: createdAt,
+  };
+}
+
+function setRuntimeBridge(appData: RuntimeBridge) {
+  window.app = appData;
+
+  if (globalThis !== window) {
+    (globalThis as RuntimeGlobal).app = appData;
+  }
+}
+
+function clearRuntimeBridge() {
+  delete window.app;
+
+  if (globalThis !== window) {
+    delete (globalThis as RuntimeGlobal).app;
+  }
 }
 
 function renderActiveScreen(

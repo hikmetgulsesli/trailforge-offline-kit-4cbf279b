@@ -38,8 +38,8 @@ export type TrailforgeAction =
   | { type: 'hydrate'; records: TrailforgeRecord[]; storageStatus: TrailforgeStorageStatus; lastError: string | null }
   | { type: 'navigate'; panel: TrailforgePanel }
   | { type: 'select'; recordId: string | null }
-  | { type: 'createKit' }
-  | { type: 'saveKit' }
+  | { type: 'createKit'; draft: TrailforgeRecord }
+  | { type: 'saveKit'; updatedAt: string }
   | { type: 'retryLoad'; records: TrailforgeRecord[]; storageStatus: TrailforgeStorageStatus; lastError: string | null }
   | { type: 'setSearch'; query: string }
   | { type: 'clearFilters' };
@@ -87,19 +87,10 @@ export function trailforgeReducer(state: TrailforgeAppState, action: TrailforgeA
         selectedRecordId: action.recordId,
       });
     case 'createKit': {
-      const createdAt = new Date().toISOString();
-      const draft: TrailforgeRecord = {
-        id: `kit-${Date.now()}`,
-        name: 'Untitled Offline Kit',
-        code: 'RT-NEW-00',
-        status: 'draft',
-        panel: 'editor',
-        updatedAt: createdAt,
-      };
       return finalizeState({
         ...state,
-        records: [draft, ...state.records],
-        selectedRecordId: draft.id,
+        records: [action.draft, ...state.records],
+        selectedRecordId: action.draft.id,
         route: 'editor',
         activePanel: 'editor',
         lastError: null,
@@ -110,7 +101,7 @@ export function trailforgeReducer(state: TrailforgeAppState, action: TrailforgeA
         ...state,
         records: state.records.map((record) =>
           record.id === state.selectedRecordId
-            ? { ...record, status: 'ready', panel: 'operations', updatedAt: new Date().toISOString() }
+            ? { ...record, status: 'ready', panel: 'operations', updatedAt: action.updatedAt }
             : record,
         ),
         route: 'operations',
@@ -137,10 +128,21 @@ function finalizeState(state: TrailforgeAppState): TrailforgeAppState {
 }
 
 function countRecords(records: TrailforgeRecord[]): TrailforgeAppState['counts'] {
-  return {
-    total: records.length,
-    ready: records.filter((record) => record.status === 'ready').length,
-    drafts: records.filter((record) => record.status === 'draft').length,
-    syncNeeded: records.filter((record) => record.status === 'sync-needed').length,
-  };
+  return records.reduce<TrailforgeAppState['counts']>(
+    (counts, record) => {
+      if (record.status === 'ready') {
+        counts.ready += 1;
+      }
+      if (record.status === 'draft') {
+        counts.drafts += 1;
+      }
+      if (record.status === 'sync-needed') {
+        counts.syncNeeded += 1;
+      }
+
+      counts.total += 1;
+      return counts;
+    },
+    { total: 0, ready: 0, drafts: 0, syncNeeded: 0 },
+  );
 }
