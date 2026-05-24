@@ -1,0 +1,389 @@
+[
+  {
+    "screenId": "671611e8dc8042169ebc2366491fdfc5",
+    "title": "Empty and Error Recovery - TrailForge Offline Kit",
+    "componentName": "EmptyAndErrorRecoveryTrailforgeOfflineKit",
+    "file": "src/screens/EmptyAndErrorRecoveryTrailforgeOfflineKit.tsx",
+    "buttons": 7,
+    "inputs": 1,
+    "links": 9,
+    "actions": [
+      {
+        "id": "new-log-1",
+        "kind": "button",
+        "label": "New Log",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "button-3-3",
+        "kind": "button",
+        "label": "Button 3",
+        "index": 2
+      },
+      {
+        "id": "button-4-4",
+        "kind": "button",
+        "label": "Button 4",
+        "index": 3
+      },
+      {
+        "id": "create-kit-5",
+        "kind": "button",
+        "label": "Create Kit",
+        "index": 4
+      },
+      {
+        "id": "retry-load-6",
+        "kind": "button",
+        "label": "Retry Load",
+        "index": 5
+      },
+      {
+        "id": "create-first-kit-7",
+        "kind": "button",
+        "label": "Create First Kit",
+        "index": 6
+      },
+      {
+        "id": "operations-1",
+        "kind": "link",
+        "label": "Operations",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "assignment-2",
+        "kind": "link",
+        "label": "Assignment",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "recovery-3",
+        "kind": "link",
+        "label": "Recovery",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "sync-settings-4",
+        "kind": "link",
+        "label": "Sync Settings",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "system-status-5",
+        "kind": "link",
+        "label": "System Status",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "clear-all-filters-6",
+        "kind": "link",
+        "label": "Clear All Filters",
+        "href": "#",
+        "index": 5
+      },
+      {
+        "id": "link-7",
+        "kind": "link",
+        "label": "#",
+        "href": "#",
+        "index": 6
+      },
+      {
+        "id": "link-8",
+        "kind": "link",
+        "label": "#",
+        "href": "#",
+        "index": 7
+      },
+      {
+        "id": "link-9",
+        "kind": "link",
+        "label": "#",
+        "href": "#",
+        "index": 8
+      }
+    ]
+  },
+  {
+    "screenId": "0559af937c4d48b583069b62a8f4a202",
+    "title": "Kit Operations - TrailForge Offline Kit",
+    "componentName": "KitOperationsTrailforgeOfflineKit",
+    "file": "src/screens/KitOperationsTrailforgeOfflineKit.tsx",
+    "buttons": 13,
+    "inputs": 1,
+    "links": 0,
+    "actions": [
+      {
+        "id": "operations-1",
+        "kind": "button",
+        "label": "Operations",
+        "index": 0
+      },
+      {
+        "id": "assignment-2",
+        "kind": "button",
+        "label": "Assignment",
+        "index": 1
+      },
+      {
+        "id": "recovery-3",
+        "kind": "button",
+        "label": "Recovery",
+        "index": 2
+      },
+      {
+        "id": "new-log-4",
+        "kind": "button",
+        "label": "New Log",
+        "index": 3
+      },
+      {
+        "id": "sync-settings-5",
+        "kind": "button",
+        "label": "Sync Settings",
+        "index": 4
+      },
+      {
+        "id": "system-status-6",
+        "kind": "button",
+        "label": "System Status",
+        "index": 5
+      },
+      {
+        "id": "button-7-7",
+        "kind": "button",
+        "label": "Button 7",
+        "index": 6
+      },
+      {
+        "id": "button-8-8",
+        "kind": "button",
+        "label": "Button 8",
+        "index": 7
+      },
+      {
+        "id": "button-9-9",
+        "kind": "button",
+        "label": "Button 9",
+        "index": 8
+      },
+      {
+        "id": "create-kit-10",
+        "kind": "button",
+        "label": "Create Kit",
+        "index": 9
+      },
+      {
+        "id": "filter-11",
+        "kind": "button",
+        "label": "Filter",
+        "index": 10
+      },
+      {
+        "id": "retry-12",
+        "kind": "button",
+        "label": "Retry",
+        "index": 11
+      },
+      {
+        "id": "button-13-13",
+        "kind": "button",
+        "label": "Button 13",
+        "index": 12
+      }
+    ]
+  },
+  {
+    "screenId": "aa3b6781ac914225b697177adb05e6ba",
+    "title": "Kit Editor - TrailForge Offline Kit",
+    "componentName": "KitEditorTrailforgeOfflineKit",
+    "file": "src/screens/KitEditorTrailforgeOfflineKit.tsx",
+    "buttons": 7,
+    "inputs": 7,
+    "links": 5,
+    "actions": [
+      {
+        "id": "button-1-1",
+        "kind": "button",
+        "label": "Button 1",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "button-3-3",
+        "kind": "button",
+        "label": "Button 3",
+        "index": 2
+      },
+      {
+        "id": "button-4-4",
+        "kind": "button",
+        "label": "Button 4",
+        "index": 3
+      },
+      {
+        "id": "new-log-5",
+        "kind": "button",
+        "label": "New Log",
+        "index": 4
+      },
+      {
+        "id": "cancel-6",
+        "kind": "button",
+        "label": "Cancel",
+        "index": 5
+      },
+      {
+        "id": "save-kit-7",
+        "kind": "button",
+        "label": "Save Kit",
+        "index": 6
+      },
+      {
+        "id": "operations-1",
+        "kind": "link",
+        "label": "Operations",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "assignment-2",
+        "kind": "link",
+        "label": "Assignment",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "recovery-3",
+        "kind": "link",
+        "label": "Recovery",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "sync-settings-4",
+        "kind": "link",
+        "label": "Sync Settings",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "system-status-5",
+        "kind": "link",
+        "label": "System Status",
+        "href": "#",
+        "index": 4
+      }
+    ]
+  },
+  {
+    "screenId": "97b18301f5e34d21aa035b093f2c90d7",
+    "title": "Gear Pack Assignment - TrailForge Offline Kit",
+    "componentName": "GearPackAssignmentTrailforgeOfflineKit",
+    "file": "src/screens/GearPackAssignmentTrailforgeOfflineKit.tsx",
+    "buttons": 8,
+    "inputs": 0,
+    "links": 5,
+    "actions": [
+      {
+        "id": "create-kit-1",
+        "kind": "button",
+        "label": "Create Kit",
+        "index": 0
+      },
+      {
+        "id": "new-log-2",
+        "kind": "button",
+        "label": "New Log",
+        "index": 1
+      },
+      {
+        "id": "search-records-3",
+        "kind": "button",
+        "label": "SEARCH RECORDS",
+        "index": 2
+      },
+      {
+        "id": "filter-insights-4",
+        "kind": "button",
+        "label": "FILTER INSIGHTS",
+        "index": 3
+      },
+      {
+        "id": "button-5-5",
+        "kind": "button",
+        "label": "Button 5",
+        "index": 4
+      },
+      {
+        "id": "button-6-6",
+        "kind": "button",
+        "label": "Button 6",
+        "index": 5
+      },
+      {
+        "id": "button-7-7",
+        "kind": "button",
+        "label": "Button 7",
+        "index": 6
+      },
+      {
+        "id": "execute-transfer-8",
+        "kind": "button",
+        "label": "EXECUTE TRANSFER",
+        "index": 7
+      },
+      {
+        "id": "operations-1",
+        "kind": "link",
+        "label": "Operations",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "assignment-2",
+        "kind": "link",
+        "label": "Assignment",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "recovery-3",
+        "kind": "link",
+        "label": "Recovery",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "sync-settings-4",
+        "kind": "link",
+        "label": "Sync Settings",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "system-status-5",
+        "kind": "link",
+        "label": "System Status",
+        "href": "#",
+        "index": 4
+      }
+    ]
+  }
+]
