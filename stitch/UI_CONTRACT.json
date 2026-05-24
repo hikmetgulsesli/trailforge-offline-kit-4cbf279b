@@ -1,0 +1,804 @@
+[
+  {
+    "screenId": "671611e8dc8042169ebc2366491fdfc5",
+    "screenTitle": "Empty and Error Recovery - TrailForge Offline Kit",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Operations",
+        "href": "#",
+        "line": 189
+      },
+      {
+        "type": "link",
+        "label": "Assignment",
+        "href": "#",
+        "line": 196
+      },
+      {
+        "type": "link",
+        "label": "Recovery",
+        "href": "#",
+        "line": 202
+      },
+      {
+        "type": "link",
+        "label": "Sync Settings",
+        "href": "#",
+        "line": 211
+      },
+      {
+        "type": "link",
+        "label": "System Status",
+        "href": "#",
+        "line": 217
+      },
+      {
+        "type": "link",
+        "label": "Clear All Filters",
+        "href": "#",
+        "line": 281
+      },
+      {
+        "type": "link",
+        "label": "settings_remote",
+        "href": "#",
+        "line": 290
+      },
+      {
+        "type": "link",
+        "label": "assignment_ind",
+        "href": "#",
+        "line": 293
+      },
+      {
+        "type": "link",
+        "label": "settings_backup_restore",
+        "href": "#",
+        "line": 296
+      },
+      {
+        "type": "button",
+        "label": "New Log",
+        "line": 181
+      },
+      {
+        "type": "button",
+        "label": "cloud_off",
+        "line": 239
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 242
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 245
+      },
+      {
+        "type": "button",
+        "label": "Create Kit",
+        "line": 249
+      },
+      {
+        "type": "button",
+        "label": "Retry Load",
+        "line": 273
+      },
+      {
+        "type": "button",
+        "label": "Create First Kit",
+        "line": 276
+      },
+      {
+        "type": "input",
+        "label": "SEARCH OPERATIONS...",
+        "inputType": "text",
+        "placeholder": "SEARCH OPERATIONS...",
+        "line": 234
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Operations",
+        "href": "#",
+        "line": 189
+      },
+      {
+        "type": "link",
+        "label": "Assignment",
+        "href": "#",
+        "line": 196
+      },
+      {
+        "type": "link",
+        "label": "Recovery",
+        "href": "#",
+        "line": 202
+      },
+      {
+        "type": "link",
+        "label": "Sync Settings",
+        "href": "#",
+        "line": 211
+      },
+      {
+        "type": "link",
+        "label": "System Status",
+        "href": "#",
+        "line": 217
+      },
+      {
+        "type": "link",
+        "label": "Clear All Filters",
+        "href": "#",
+        "line": 281
+      },
+      {
+        "type": "link",
+        "label": "settings_remote",
+        "href": "#",
+        "line": 290
+      },
+      {
+        "type": "link",
+        "label": "assignment_ind",
+        "href": "#",
+        "line": 293
+      },
+      {
+        "type": "link",
+        "label": "settings_backup_restore",
+        "href": "#",
+        "line": 296
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "New Log",
+        "line": 181
+      },
+      {
+        "type": "button",
+        "label": "cloud_off",
+        "line": 239
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 242
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 245
+      },
+      {
+        "type": "button",
+        "label": "Create Kit",
+        "line": 249
+      },
+      {
+        "type": "button",
+        "label": "Retry Load",
+        "line": 273
+      },
+      {
+        "type": "button",
+        "label": "Create First Kit",
+        "line": 276
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "SEARCH OPERATIONS...",
+        "inputType": "text",
+        "placeholder": "SEARCH OPERATIONS...",
+        "line": 234
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 17,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "0559af937c4d48b583069b62a8f4a202",
+    "screenTitle": "Kit Operations - TrailForge Offline Kit",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "Operations",
+        "line": 139
+      },
+      {
+        "type": "button",
+        "label": "Assignment",
+        "line": 144
+      },
+      {
+        "type": "button",
+        "label": "Recovery",
+        "line": 148
+      },
+      {
+        "type": "button",
+        "label": "New Log",
+        "line": 155
+      },
+      {
+        "type": "button",
+        "label": "Sync Settings",
+        "line": 159
+      },
+      {
+        "type": "button",
+        "label": "System Status",
+        "line": 163
+      },
+      {
+        "type": "button",
+        "label": "Sync",
+        "line": 184
+      },
+      {
+        "type": "button",
+        "label": "Offline Mode",
+        "line": 187
+      },
+      {
+        "type": "button",
+        "label": "Settings",
+        "line": 190
+      },
+      {
+        "type": "button",
+        "label": "Create Kit",
+        "line": 194
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 213
+      },
+      {
+        "type": "button",
+        "label": "Retry",
+        "line": 237
+      },
+      {
+        "type": "button",
+        "label": "Edit",
+        "line": 307
+      },
+      {
+        "type": "input",
+        "label": "Search Records...",
+        "inputType": "text",
+        "placeholder": "Search Records...",
+        "line": 179
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Operations",
+        "line": 139
+      },
+      {
+        "type": "button",
+        "label": "Assignment",
+        "line": 144
+      },
+      {
+        "type": "button",
+        "label": "Recovery",
+        "line": 148
+      },
+      {
+        "type": "button",
+        "label": "New Log",
+        "line": 155
+      },
+      {
+        "type": "button",
+        "label": "Sync Settings",
+        "line": 159
+      },
+      {
+        "type": "button",
+        "label": "System Status",
+        "line": 163
+      },
+      {
+        "type": "button",
+        "label": "Sync",
+        "line": 184
+      },
+      {
+        "type": "button",
+        "label": "Offline Mode",
+        "line": 187
+      },
+      {
+        "type": "button",
+        "label": "Settings",
+        "line": 190
+      },
+      {
+        "type": "button",
+        "label": "Create Kit",
+        "line": 194
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 213
+      },
+      {
+        "type": "button",
+        "label": "Retry",
+        "line": 237
+      },
+      {
+        "type": "button",
+        "label": "Edit",
+        "line": 307
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search Records...",
+        "inputType": "text",
+        "placeholder": "Search Records...",
+        "line": 179
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 14,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "aa3b6781ac914225b697177adb05e6ba",
+    "screenTitle": "Kit Editor - TrailForge Offline Kit",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Operations",
+        "href": "#",
+        "line": 198
+      },
+      {
+        "type": "link",
+        "label": "Assignment",
+        "href": "#",
+        "line": 202
+      },
+      {
+        "type": "link",
+        "label": "Recovery",
+        "href": "#",
+        "line": 206
+      },
+      {
+        "type": "link",
+        "label": "Sync Settings",
+        "href": "#",
+        "line": 212
+      },
+      {
+        "type": "link",
+        "label": "System Status",
+        "href": "#",
+        "line": 216
+      },
+      {
+        "type": "button",
+        "label": "arrow_back",
+        "line": 169
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 179
+      },
+      {
+        "type": "button",
+        "label": "cloud_off",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 185
+      },
+      {
+        "type": "button",
+        "label": "New Log",
+        "line": 221
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 323
+      },
+      {
+        "type": "button",
+        "label": "Kit",
+        "line": 326
+      },
+      {
+        "type": "input",
+        "label": "e.g., Alpha Sector Sweeper",
+        "inputType": "text",
+        "placeholder": "e.g., Alpha Sector Sweeper",
+        "line": 249
+      },
+      {
+        "type": "input",
+        "label": "RT-XXXX-00",
+        "inputType": "text",
+        "placeholder": "RT-XXXX-00",
+        "line": 257
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 264
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 281
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 288
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 295
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 302
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 317
+      },
+      {
+        "type": "form",
+        "label": "form",
+        "line": 239
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Operations",
+        "href": "#",
+        "line": 198
+      },
+      {
+        "type": "link",
+        "label": "Assignment",
+        "href": "#",
+        "line": 202
+      },
+      {
+        "type": "link",
+        "label": "Recovery",
+        "href": "#",
+        "line": 206
+      },
+      {
+        "type": "link",
+        "label": "Sync Settings",
+        "href": "#",
+        "line": 212
+      },
+      {
+        "type": "link",
+        "label": "System Status",
+        "href": "#",
+        "line": 216
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "arrow_back",
+        "line": 169
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 179
+      },
+      {
+        "type": "button",
+        "label": "cloud_off",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 185
+      },
+      {
+        "type": "button",
+        "label": "New Log",
+        "line": 221
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 323
+      },
+      {
+        "type": "button",
+        "label": "Kit",
+        "line": 326
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "e.g., Alpha Sector Sweeper",
+        "inputType": "text",
+        "placeholder": "e.g., Alpha Sector Sweeper",
+        "line": 249
+      },
+      {
+        "type": "input",
+        "label": "RT-XXXX-00",
+        "inputType": "text",
+        "placeholder": "RT-XXXX-00",
+        "line": 257
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 264
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 281
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 288
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 295
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 302
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 317
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 21,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "97b18301f5e34d21aa035b093f2c90d7",
+    "screenTitle": "Gear Pack Assignment - TrailForge Offline Kit",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Operations",
+        "href": "#",
+        "line": 144
+      },
+      {
+        "type": "link",
+        "label": "Assignment",
+        "href": "#",
+        "line": 148
+      },
+      {
+        "type": "link",
+        "label": "Recovery",
+        "href": "#",
+        "line": 152
+      },
+      {
+        "type": "link",
+        "label": "Sync Settings",
+        "href": "#",
+        "line": 158
+      },
+      {
+        "type": "link",
+        "label": "System Status",
+        "href": "#",
+        "line": 162
+      },
+      {
+        "type": "button",
+        "label": "Create Kit",
+        "line": 121
+      },
+      {
+        "type": "button",
+        "label": "New Log",
+        "line": 141
+      },
+      {
+        "type": "button",
+        "label": "RECORDS",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "FILTER INSIGHTS",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 221
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 244
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 263
+      },
+      {
+        "type": "button",
+        "label": "EXECUTE TRANSFER",
+        "line": 290
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 276
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 284
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Operations",
+        "href": "#",
+        "line": 144
+      },
+      {
+        "type": "link",
+        "label": "Assignment",
+        "href": "#",
+        "line": 148
+      },
+      {
+        "type": "link",
+        "label": "Recovery",
+        "href": "#",
+        "line": 152
+      },
+      {
+        "type": "link",
+        "label": "Sync Settings",
+        "href": "#",
+        "line": 158
+      },
+      {
+        "type": "link",
+        "label": "System Status",
+        "href": "#",
+        "line": 162
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Create Kit",
+        "line": 121
+      },
+      {
+        "type": "button",
+        "label": "New Log",
+        "line": 141
+      },
+      {
+        "type": "button",
+        "label": "RECORDS",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "FILTER INSIGHTS",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 221
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 244
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 263
+      },
+      {
+        "type": "button",
+        "label": "EXECUTE TRANSFER",
+        "line": 290
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 276
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 284
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 15,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
